@@ -23,3 +23,14 @@
 - yarn add react-native-vector-icons
 - npx react-native link react-native-vector-icons
 - yarn add react-native-safe-area-context
+
+---
+
+Fecha Limite para la entrega de proyecto 19 de Junio
+
+- Manejo de Props y estructura de componentes: 16 pts - (componentes)
+- Implementación de Context: 20pts - ------ -
+- React Navigation: 16pts (useNavigation) (Props)
+- Hooks: 16pts - (useState) (UseEffect)
+- 1 Modulo nativo: 16 pts - (huella) (Camara)
+- Axios, Fetch o GraphQL: 16pts - (Fetch) (Axios)
