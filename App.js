@@ -4,12 +4,12 @@ import Navigation from './src/navigation/Navigation';
 import {StatusBar} from 'react-native';
 import {colors} from './src/utils/colors';
 
-export default function App() {
+export default function App(Props) {
   return (
     <NavigationContainer>
       <StatusBar
         barStyle={'light-content'}
-        backgroundColor={colors.PRIMARY_COLOR_DARK}
+        backgroundColor={colors.COLOR_HEADER_COLOR}
       />
       <Navigation />
     </NavigationContainer>

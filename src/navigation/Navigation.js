@@ -25,7 +25,7 @@ export default function Navigation() {
         options={{
           headerShown: false,
           title: 'Bares',
-          tabBarIcon: ({color, size}) => (
+          tabBarIcon: ({color}) => (
             <Icon name="store" type="material" color={color} size={32}></Icon>
           ),
         }}
@@ -35,6 +35,10 @@ export default function Navigation() {
         component={FavoriteScreen}
         options={{
           title: 'Favoritos',
+          headerStyle: {
+            backgroundColor: colors.PRIMARY_COLOR_DARK,
+          },
+          headerTintColor: colors.PRIMARY_COLOR_LIGHT,
           tabBarIcon: ({color, size}) => (
             <Icon
               name="bookmark"
@@ -56,6 +60,10 @@ export default function Navigation() {
               color={color}
               size={size}></Icon>
           ),
+          headerStyle: {
+            backgroundColor: colors.PRIMARY_COLOR_DARK,
+          },
+          headerTintColor: colors.PRIMARY_COLOR_LIGHT,
         }}
       />
       <Tab.Screen
@@ -63,6 +71,10 @@ export default function Navigation() {
         component={SearchScreen}
         options={{
           title: 'Buscar',
+          headerStyle: {
+            backgroundColor: colors.PRIMARY_COLOR_DARK,
+          },
+          headerTintColor: colors.PRIMARY_COLOR_LIGHT,
           tabBarIcon: ({color, size}) => (
             <Icon
               name="magnify"

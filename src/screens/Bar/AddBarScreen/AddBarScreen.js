@@ -5,7 +5,7 @@ import {styles} from './AddBarScreen.style';
 export function AddBarScreen() {
   return (
     <View>
-      <Text>AddBaresScreen</Text>
+      <Text>Add Bares Screen</Text>
     </View>
   );
 }
