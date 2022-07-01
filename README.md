@@ -2,14 +2,23 @@
 ### Escalab · React Native Certification Project
 ---
 
-### Proyecto de Cocteles:
-
-- Bares: Muestra todos los bares y registra bares.
-- Favoritos: muestra los bares agregados a favoritos
-- Cocteles: muestra una api de cocteles y su ingredientes
-- Buscar: Busca los bares y cocteles
+### Proyecto PELISBAR:
+- Cocteles: Muestra valores de cocteles y Promociones.
+- Ingredientes: Muestra ingredientes con touchID para mas seguridad
+- Calculadora: Muetra el detalle total considerando promocion, cantidades y delivery
+- Cartelera: nos muestra la pelicula en cartelera mas detalles sacados de API
 
 ---
+### Valores:
+
+La sección de valores es básicamente para calcular el precio, dentro del Bar hay 2 opciones de compra, una en el local el cual tiene un cargo de 2.000CLP para el mesero y otra opción de encargo a domicilio el cual tiene un cargo de traslado de 5.000CLP.
+Además la persona podrá selección 3 Promociones diarias en el menú diario del bar.
+
+* Promoción 1 * 10.000CLP
+* Promoción 2 * 13.000CLP
+* Promoción 3 * 16.000CLP
+---
+
 ### installations:
 
 #### react navigation:
@@ -26,11 +35,21 @@
 
 ---
 
-Fecha Limite para la entrega de proyecto 19 de Junio
+### Fecha Limite para la entrega de proyecto 30 de Junio
 
-- Manejo de Props y estructura de componentes: 16 pts - (componentes)
-- Implementación de Context: 20pts - ------ -
-- React Navigation: 16pts (useNavigation) (Props)
-- Hooks: 16pts - (useState) (UseEffect)
-- 1 Modulo nativo: 16 pts - (huella) (Camara)
-- Axios, Fetch o GraphQL: 16pts - (Fetch) (Axios)
+- Manejo de Props y estructura de componentes: 16 pts
+- Implementación de Context: 20pts
+- React Navigation: 16pts
+- Hooks: 16pts
+- 1 Modulo nativo: 16 pts
+- Axios, Fetch o GraphQL: 16pts
+
+---
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/71857156/176818412-69f870ed-2526-41e6-bb94-35608c91f52e.png" width="32%"/>
+  <img src="https://user-images.githubusercontent.com/71857156/176818421-50bf2208-1bac-4698-a86d-25f2ccb7d74f.png" width="30%"/>
+</p>
+
+
+
