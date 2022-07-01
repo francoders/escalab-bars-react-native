@@ -1,5 +1,11 @@
-## Escalab Bars react-native
+<h1 align="center">PELISBAR ESCALAB   <img src="https://user-images.githubusercontent.com/71857156/176819587-ebed5a46-94f8-43f7-8726-314fb29c63c5.png" width="4%"/> </h1>
+
 ### Escalab · React Native Certification Project
+
+* Version: 1.0.0
+* package installer: yarn
+* Environment: React Native 
+* Language: Javascript
 ---
 
 ### Proyecto PELISBAR:
