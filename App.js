@@ -1,8 +1,10 @@
 import React from 'react';
+import {StatusBar, LogBox} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import Navigation from './src/navigation/Navigation';
-import {StatusBar} from 'react-native';
 import {colors} from './src/utils/colors';
+
+LogBox.ignoreAllLogs();
 
 export default function App(Props) {
   return (

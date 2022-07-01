@@ -2,12 +2,12 @@ import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {Icon} from '@rneui/base';
 
-import {BarScreen} from '../screens/Bar/BarScreen';
-import {FavoriteScreen} from '../screens/FavoriteScreen';
 import {CocktailScreen} from '../screens/CocktailScreen';
-import {SearchScreen} from '../screens/SearchScreen';
+import {IngredientStack} from './IngredientStack';
+import {ValoresScreen} from '../screens/ValoresScreen';
+import {BillboardScreen} from '../screens/Billboard/BillboardScreen';
 import {screen, colors} from '../utils';
-import {BarStack} from './BarStack';
+import PersonajeStack from './PersonajeStack';
 
 const Tab = createBottomTabNavigator();
 
@@ -19,35 +19,6 @@ export default function Navigation() {
         tabBarInactiveTintColor: colors.PRIMARY_COLOR_DARK,
         tabBarActiveBackgroundColor: colors.PRIMARY_COLOR_DARK,
       }}>
-      <Tab.Screen
-        name={screen.bar.tab}
-        component={BarStack}
-        options={{
-          headerShown: false,
-          title: 'Bares',
-          tabBarIcon: ({color}) => (
-            <Icon name="store" type="material" color={color} size={32}></Icon>
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="Favorite"
-        component={FavoriteScreen}
-        options={{
-          title: 'Favoritos',
-          headerStyle: {
-            backgroundColor: colors.PRIMARY_COLOR_DARK,
-          },
-          headerTintColor: colors.PRIMARY_COLOR_LIGHT,
-          tabBarIcon: ({color, size}) => (
-            <Icon
-              name="bookmark"
-              type="material"
-              color={color}
-              size={size}></Icon>
-          ),
-        }}
-      />
       <Tab.Screen
         name="Cocktail"
         component={CocktailScreen}
@@ -66,18 +37,55 @@ export default function Navigation() {
           headerTintColor: colors.PRIMARY_COLOR_LIGHT,
         }}
       />
+
       <Tab.Screen
-        name="Search"
-        component={SearchScreen}
+        name={screen.ingredient.tab}
+        component={IngredientStack}
         options={{
-          title: 'Buscar',
+          headerShown: false,
+          title: 'Ingredientes',
+          tabBarIcon: ({color}) => (
+            <Icon
+              name="fridge"
+              type="material-community"
+              color={color}
+              size={28}></Icon>
+          ),
+        }}
+      />
+
+      <Tab.Screen
+        name="Valores"
+        component={ValoresScreen}
+        options={{
+          title: 'Valores',
+          headerStyle: {
+            backgroundColor: colors.PRIMARY_COLOR_DARK,
+          },
+          headerTintColor: colors.PRIMARY_COLOR_LIGHT,
+          tabBarIcon: ({color}) => (
+            <Icon
+              name="cash-multiple"
+              type="material-community"
+              color={color}
+              size={30}></Icon>
+          ),
+        }}
+      />
+
+      <Tab.Screen
+        name={screen.bilboard.tabB}
+        component={PersonajeStack}
+        options={{
+          headerShown: false,
+          title: 'Cartelera',
           headerStyle: {
             backgroundColor: colors.PRIMARY_COLOR_DARK,
           },
           headerTintColor: colors.PRIMARY_COLOR_LIGHT,
           tabBarIcon: ({color, size}) => (
             <Icon
-              name="magnify"
+              name="filmstrip"
               type="material-community"
               color={color}
               size={size}></Icon>

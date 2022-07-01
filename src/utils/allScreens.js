@@ -1,9 +1,16 @@
-const BarStack = {
-  tab: 'BarTab',
-  Bar: 'Bar',
-  AddBar: 'AddBar',
+const IngredientStack = {
+  tab: 'IngredientTab',
+  Ingredient: 'Ingredient',
+  IngredientList: 'IngredientList',
+};
+
+const BilboardStack = {
+  tabB: 'BilboardTab',
+  Bilboard: 'Bilboard',
+  BilboardList: 'BilboardList',
 };
 
 export const screen = {
-  bar: BarStack,
+  ingredient: IngredientStack,
+  bilboard: BilboardStack,
 };

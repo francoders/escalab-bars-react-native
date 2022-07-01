@@ -1,20 +1,20 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import {BarScreen} from '../screens/Bar/BarScreen';
-import {AddBarScreen} from '../screens/Bar/AddBarScreen';
+import {IngredientScreen} from '../screens/Ingredient/IngredientScreen';
+import {IngredientListScreen} from '../screens/Ingredient/IngredientListScreen';
 import {colors, screen} from '../utils';
 
 const Stack = createNativeStackNavigator();
 
-export function BarStack() {
+export function IngredientStack() {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name={screen.bar.Bar}
-        component={BarScreen}
+        name={screen.ingredient.Ingredient}
+        component={IngredientScreen}
         options={{
-          title: 'Bares',
+          title: 'Ingredientes',
           headerStyle: {
             backgroundColor: colors.PRIMARY_COLOR_DARK,
           },
@@ -23,9 +23,9 @@ export function BarStack() {
       />
 
       <Stack.Screen
-        name={screen.bar.AddBar}
-        component={AddBarScreen}
-        options={{title: 'Agregar Bares'}}
+        name={screen.ingredient.IngredientList}
+        component={IngredientListScreen}
+        options={{title: 'Lista de Ingredientes'}}
       />
     </Stack.Navigator>
   );
